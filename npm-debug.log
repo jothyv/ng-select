@@ -1,0 +1,186 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/local/Cellar/node@6/6.14.2/bin/node',
+1 verbose cli   '/usr/local/opt/node@6/bin/npm',
+1 verbose cli   'install',
+1 verbose cli   'jothyv/ng-select' ]
+2 info using npm@3.10.10
+3 info using node@v6.14.2
+4 silly loadCurrentTree Starting
+5 silly install loadCurrentTree
+6 silly install readLocalPackageData
+7 silly fetchPackageMetaData jothyv/ng-select
+8 silly fetchOtherPackageData jothyv/ng-select
+9 silly cache add args [ 'jothyv/ng-select', null ]
+10 verbose cache add spec jothyv/ng-select
+11 silly cache add parsed spec Result {
+11 silly cache add   raw: 'jothyv/ng-select',
+11 silly cache add   scope: null,
+11 silly cache add   escapedName: null,
+11 silly cache add   name: null,
+11 silly cache add   rawSpec: 'jothyv/ng-select',
+11 silly cache add   spec: 'github:jothyv/ng-select',
+11 silly cache add   type: 'hosted',
+11 silly cache add   hosted:
+11 silly cache add    { type: 'github',
+11 silly cache add      ssh: 'git@github.com:jothyv/ng-select.git',
+11 silly cache add      sshUrl: 'git+ssh://git@github.com/jothyv/ng-select.git',
+11 silly cache add      httpsUrl: 'git+https://github.com/jothyv/ng-select.git',
+11 silly cache add      gitUrl: 'git://github.com/jothyv/ng-select.git',
+11 silly cache add      shortcut: 'github:jothyv/ng-select',
+11 silly cache add      directUrl: 'https://raw.githubusercontent.com/jothyv/ng-select/master/package.json' } }
+12 verbose addRemoteGit caching jothyv/ng-select
+13 verbose addRemoteGit jothyv/ng-select is a repository hosted by github
+14 silly tryGitProto attempting to clone git://github.com/jothyv/ng-select.git
+15 silly tryClone cloning jothyv/ng-select via git://github.com/jothyv/ng-select.git
+16 verbose tryClone git-github-com-jothyv-ng-select-git-67b8c84c not in flight; caching
+17 verbose correctMkdir /Users/jothyv/.npm/_git-remotes correctMkdir not in flight; initializing
+18 info git [ 'clone',
+18 info git   '--template=/Users/jothyv/.npm/_git-remotes/_templates',
+18 info git   '--mirror',
+18 info git   'git://github.com/jothyv/ng-select.git',
+18 info git   '/Users/jothyv/.npm/_git-remotes/git-github-com-jothyv-ng-select-git-67b8c84c' ]
+19 verbose mirrorRemote jothyv/ng-select git clone git://github.com/jothyv/ng-select.git
+20 verbose correctMkdir /Users/jothyv/.npm/_git-remotes correctMkdir not in flight; initializing
+21 verbose setPermissions jothyv/ng-select set permissions on /Users/jothyv/.npm/_git-remotes/git-github-com-jothyv-ng-select-git-67b8c84c
+22 verbose resolveHead jothyv/ng-select original treeish: master
+23 info git [ 'rev-list', '-n1', 'master' ]
+24 silly resolveHead jothyv/ng-select resolved treeish: be34154b835f41d7f37bed75ab861c9accdf7b09
+25 verbose resolveHead jothyv/ng-select resolved Git URL: git://github.com/jothyv/ng-select.git#be34154b835f41d7f37bed75ab861c9accdf7b09
+26 silly resolveHead Git working directory: /var/folders/l3/1q9hpncj2rnf8hxzmds_r_x40000gn/T/npm-75015-f3eb080b/git-cache-88b8de09/be34154b835f41d7f37bed75ab861c9accdf7b09
+27 info git [ 'clone',
+27 info git   '/Users/jothyv/.npm/_git-remotes/git-github-com-jothyv-ng-select-git-67b8c84c',
+27 info git   '/var/folders/l3/1q9hpncj2rnf8hxzmds_r_x40000gn/T/npm-75015-f3eb080b/git-cache-88b8de09/be34154b835f41d7f37bed75ab861c9accdf7b09' ]
+28 verbose cloneResolved jothyv/ng-select clone Cloning into '/var/folders/l3/1q9hpncj2rnf8hxzmds_r_x40000gn/T/npm-75015-f3eb080b/git-cache-88b8de09/be34154b835f41d7f37bed75ab861c9accdf7b09'...
+28 verbose cloneResolved done.
+29 info git [ 'checkout', 'be34154b835f41d7f37bed75ab861c9accdf7b09' ]
+30 verbose checkoutTreeish jothyv/ng-select checkout Note: checking out 'be34154b835f41d7f37bed75ab861c9accdf7b09'.
+30 verbose checkoutTreeish
+30 verbose checkoutTreeish You are in 'detached HEAD' state. You can look around, make experimental
+30 verbose checkoutTreeish changes and commit them, and you can discard any commits you make in this
+30 verbose checkoutTreeish state without impacting any branches by performing another checkout.
+30 verbose checkoutTreeish
+30 verbose checkoutTreeish If you want to create a new branch to retain commits you create, you may
+30 verbose checkoutTreeish do so (now or later) by using -b with the checkout command again. Example:
+30 verbose checkoutTreeish
+30 verbose checkoutTreeish   git checkout -b <new-branch-name>
+30 verbose checkoutTreeish
+30 verbose checkoutTreeish HEAD is now at be34154... Update README.md
+31 info git [ 'submodule', '-q', 'update', '--init', '--recursive' ]
+32 verbose updateSubmodules jothyv/ng-select submodule update
+33 error addLocal Could not install /var/folders/l3/1q9hpncj2rnf8hxzmds_r_x40000gn/T/npm-75015-f3eb080b/git-cache-88b8de09/be34154b835f41d7f37bed75ab861c9accdf7b09
+34 silly tryHTTPS attempting to clone git+https://github.com/jothyv/ng-select.git
+35 silly tryClone cloning jothyv/ng-select via git+https://github.com/jothyv/ng-select.git
+36 verbose tryClone git-https-github-com-jothyv-ng-select-git-3a6e22dc not in flight; caching
+37 verbose correctMkdir /Users/jothyv/.npm/_git-remotes correctMkdir not in flight; initializing
+38 info git [ 'clone',
+38 info git   '--template=/Users/jothyv/.npm/_git-remotes/_templates',
+38 info git   '--mirror',
+38 info git   'https://github.com/jothyv/ng-select.git',
+38 info git   '/Users/jothyv/.npm/_git-remotes/git-https-github-com-jothyv-ng-select-git-3a6e22dc' ]
+39 verbose mirrorRemote jothyv/ng-select git clone https://github.com/jothyv/ng-select.git
+40 verbose correctMkdir /Users/jothyv/.npm/_git-remotes correctMkdir not in flight; initializing
+41 verbose setPermissions jothyv/ng-select set permissions on /Users/jothyv/.npm/_git-remotes/git-https-github-com-jothyv-ng-select-git-3a6e22dc
+42 verbose resolveHead jothyv/ng-select original treeish: master
+43 info git [ 'rev-list', '-n1', 'master' ]
+44 silly resolveHead jothyv/ng-select resolved treeish: be34154b835f41d7f37bed75ab861c9accdf7b09
+45 verbose resolveHead jothyv/ng-select resolved Git URL: git+https://github.com/jothyv/ng-select.git#be34154b835f41d7f37bed75ab861c9accdf7b09
+46 silly resolveHead Git working directory: /var/folders/l3/1q9hpncj2rnf8hxzmds_r_x40000gn/T/npm-75015-f3eb080b/git-cache-7410cddf/be34154b835f41d7f37bed75ab861c9accdf7b09
+47 info git [ 'clone',
+47 info git   '/Users/jothyv/.npm/_git-remotes/git-https-github-com-jothyv-ng-select-git-3a6e22dc',
+47 info git   '/var/folders/l3/1q9hpncj2rnf8hxzmds_r_x40000gn/T/npm-75015-f3eb080b/git-cache-7410cddf/be34154b835f41d7f37bed75ab861c9accdf7b09' ]
+48 verbose cloneResolved jothyv/ng-select clone Cloning into '/var/folders/l3/1q9hpncj2rnf8hxzmds_r_x40000gn/T/npm-75015-f3eb080b/git-cache-7410cddf/be34154b835f41d7f37bed75ab861c9accdf7b09'...
+48 verbose cloneResolved done.
+49 info git [ 'checkout', 'be34154b835f41d7f37bed75ab861c9accdf7b09' ]
+50 verbose checkoutTreeish jothyv/ng-select checkout Note: checking out 'be34154b835f41d7f37bed75ab861c9accdf7b09'.
+50 verbose checkoutTreeish
+50 verbose checkoutTreeish You are in 'detached HEAD' state. You can look around, make experimental
+50 verbose checkoutTreeish changes and commit them, and you can discard any commits you make in this
+50 verbose checkoutTreeish state without impacting any branches by performing another checkout.
+50 verbose checkoutTreeish
+50 verbose checkoutTreeish If you want to create a new branch to retain commits you create, you may
+50 verbose checkoutTreeish do so (now or later) by using -b with the checkout command again. Example:
+50 verbose checkoutTreeish
+50 verbose checkoutTreeish   git checkout -b <new-branch-name>
+50 verbose checkoutTreeish
+50 verbose checkoutTreeish HEAD is now at be34154... Update README.md
+51 info git [ 'submodule', '-q', 'update', '--init', '--recursive' ]
+52 verbose updateSubmodules jothyv/ng-select submodule update
+53 error addLocal Could not install /var/folders/l3/1q9hpncj2rnf8hxzmds_r_x40000gn/T/npm-75015-f3eb080b/git-cache-7410cddf/be34154b835f41d7f37bed75ab861c9accdf7b09
+54 silly trySSH attempting to clone git@github.com:jothyv/ng-select.git
+55 silly tryClone cloning jothyv/ng-select via git@github.com:jothyv/ng-select.git
+56 verbose tryClone git-github-com-jothyv-ng-select-git-bfd37b15 not in flight; caching
+57 verbose correctMkdir /Users/jothyv/.npm/_git-remotes correctMkdir not in flight; initializing
+58 info git [ 'clone',
+58 info git   '--template=/Users/jothyv/.npm/_git-remotes/_templates',
+58 info git   '--mirror',
+58 info git   'git@github.com:jothyv/ng-select.git',
+58 info git   '/Users/jothyv/.npm/_git-remotes/git-github-com-jothyv-ng-select-git-bfd37b15' ]
+59 error git clone --template=/Users/jothyv/.npm/_git-remotes/_templates --mirror git@github.com:jothyv/ng-select.git /Users/jothyv/.npm/_git-remotes/git-github-com-jothyv-ng-select-git-bfd37b15: Cloning into bare repository '/Users/jothyv/.npm/_git-remotes/git-github-com-jothyv-ng-select-git-bfd37b15'...
+59 error git clone --template=/Users/jothyv/.npm/_git-remotes/_templates --mirror git@github.com:jothyv/ng-select.git /Users/jothyv/.npm/_git-remotes/git-github-com-jothyv-ng-select-git-bfd37b15: git@github.com: Permission denied (publickey).
+59 error git clone --template=/Users/jothyv/.npm/_git-remotes/_templates --mirror git@github.com:jothyv/ng-select.git /Users/jothyv/.npm/_git-remotes/git-github-com-jothyv-ng-select-git-bfd37b15: fatal: Could not read from remote repository.
+59 error git clone --template=/Users/jothyv/.npm/_git-remotes/_templates --mirror git@github.com:jothyv/ng-select.git /Users/jothyv/.npm/_git-remotes/git-github-com-jothyv-ng-select-git-bfd37b15:
+59 error git clone --template=/Users/jothyv/.npm/_git-remotes/_templates --mirror git@github.com:jothyv/ng-select.git /Users/jothyv/.npm/_git-remotes/git-github-com-jothyv-ng-select-git-bfd37b15: Please make sure you have the correct access rights
+59 error git clone --template=/Users/jothyv/.npm/_git-remotes/_templates --mirror git@github.com:jothyv/ng-select.git /Users/jothyv/.npm/_git-remotes/git-github-com-jothyv-ng-select-git-bfd37b15: and the repository exists.
+60 silly fetchPackageMetaData Error: Command failed: git clone --template=/Users/jothyv/.npm/_git-remotes/_templates --mirror git@github.com:jothyv/ng-select.git /Users/jothyv/.npm/_git-remotes/git-github-com-jothyv-ng-select-git-bfd37b15
+60 silly fetchPackageMetaData Cloning into bare repository '/Users/jothyv/.npm/_git-remotes/git-github-com-jothyv-ng-select-git-bfd37b15'...
+60 silly fetchPackageMetaData git@github.com: Permission denied (publickey).
+60 silly fetchPackageMetaData fatal: Could not read from remote repository.
+60 silly fetchPackageMetaData
+60 silly fetchPackageMetaData Please make sure you have the correct access rights
+60 silly fetchPackageMetaData and the repository exists.
+60 silly fetchPackageMetaData
+60 silly fetchPackageMetaData     at ChildProcess.exithandler (child_process.js:199:12)
+60 silly fetchPackageMetaData     at emitTwo (events.js:106:13)
+60 silly fetchPackageMetaData     at ChildProcess.emit (events.js:191:7)
+60 silly fetchPackageMetaData     at maybeClose (internal/child_process.js:920:16)
+60 silly fetchPackageMetaData     at Process.ChildProcess._handle.onexit (internal/child_process.js:230:5)
+60 silly fetchPackageMetaData  error for jothyv/ng-select { Error: Command failed: git clone --template=/Users/jothyv/.npm/_git-remotes/_templates --mirror git@github.com:jothyv/ng-select.git /Users/jothyv/.npm/_git-remotes/git-github-com-jothyv-ng-select-git-bfd37b15
+60 silly fetchPackageMetaData Cloning into bare repository '/Users/jothyv/.npm/_git-remotes/git-github-com-jothyv-ng-select-git-bfd37b15'...
+60 silly fetchPackageMetaData git@github.com: Permission denied (publickey).
+60 silly fetchPackageMetaData fatal: Could not read from remote repository.
+60 silly fetchPackageMetaData
+60 silly fetchPackageMetaData Please make sure you have the correct access rights
+60 silly fetchPackageMetaData and the repository exists.
+60 silly fetchPackageMetaData
+60 silly fetchPackageMetaData     at ChildProcess.exithandler (child_process.js:199:12)
+60 silly fetchPackageMetaData     at emitTwo (events.js:106:13)
+60 silly fetchPackageMetaData     at ChildProcess.emit (events.js:191:7)
+60 silly fetchPackageMetaData     at maybeClose (internal/child_process.js:920:16)
+60 silly fetchPackageMetaData     at Process.ChildProcess._handle.onexit (internal/child_process.js:230:5)
+60 silly fetchPackageMetaData   killed: false,
+60 silly fetchPackageMetaData   code: 128,
+60 silly fetchPackageMetaData   signal: null,
+60 silly fetchPackageMetaData   cmd: 'git clone --template=/Users/jothyv/.npm/_git-remotes/_templates --mirror git@github.com:jothyv/ng-select.git /Users/jothyv/.npm/_git-remotes/git-github-com-jothyv-ng-select-git-bfd37b15' }
+61 silly rollbackFailedOptional Starting
+62 silly rollbackFailedOptional Finishing
+63 silly runTopLevelLifecycles Finishing
+64 silly install printInstalled
+65 verbose stack Error: Command failed: git clone --template=/Users/jothyv/.npm/_git-remotes/_templates --mirror git@github.com:jothyv/ng-select.git /Users/jothyv/.npm/_git-remotes/git-github-com-jothyv-ng-select-git-bfd37b15
+65 verbose stack Cloning into bare repository '/Users/jothyv/.npm/_git-remotes/git-github-com-jothyv-ng-select-git-bfd37b15'...
+65 verbose stack git@github.com: Permission denied (publickey).
+65 verbose stack fatal: Could not read from remote repository.
+65 verbose stack
+65 verbose stack Please make sure you have the correct access rights
+65 verbose stack and the repository exists.
+65 verbose stack
+65 verbose stack     at ChildProcess.exithandler (child_process.js:199:12)
+65 verbose stack     at emitTwo (events.js:106:13)
+65 verbose stack     at ChildProcess.emit (events.js:191:7)
+65 verbose stack     at maybeClose (internal/child_process.js:920:16)
+65 verbose stack     at Process.ChildProcess._handle.onexit (internal/child_process.js:230:5)
+66 verbose cwd /Users/jothyv/git_repos/ng-select
+67 error Darwin 17.4.0
+68 error argv "/usr/local/Cellar/node@6/6.14.2/bin/node" "/usr/local/opt/node@6/bin/npm" "install" "jothyv/ng-select"
+69 error node v6.14.2
+70 error npm  v3.10.10
+71 error code 128
+72 error Command failed: git clone --template=/Users/jothyv/.npm/_git-remotes/_templates --mirror git@github.com:jothyv/ng-select.git /Users/jothyv/.npm/_git-remotes/git-github-com-jothyv-ng-select-git-bfd37b15
+72 error Cloning into bare repository '/Users/jothyv/.npm/_git-remotes/git-github-com-jothyv-ng-select-git-bfd37b15'...
+72 error git@github.com: Permission denied (publickey).
+72 error fatal: Could not read from remote repository.
+72 error
+72 error Please make sure you have the correct access rights
+72 error and the repository exists.
+73 error If you need help, you may report this error at:
+73 error     <https://github.com/npm/npm/issues>
+74 verbose exit [ 1, true ]

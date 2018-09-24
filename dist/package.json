@@ -5,7 +5,7 @@
   "description": "Angular ng-select - All in One UI Select, Multiselect and Autocomplete",
   "author": "@ng-select/ng-select",
   "license": "MIT",
-  "repository": "git@github.com:jothyv/ng-select.git",
+  "repository": "git@github.com:ng-select/ng-select.git",
   "engines": {
     "node": ">= 6.9.0",
     "npm": ">= 3.0.0"
@@ -25,11 +25,12 @@
     "@angular/core": ">=5.0.0 <7.0.0",
     "@angular/forms": ">=5.0.0 <7.0.0"
   },
-  "ngPackage": {
-    "lib": {
-      "flatModuleFile": "ng-select",
-      "entryFile": "index.ts"
-    },
-    "dest": "../dist"
+  "main": "bundles/ng-select.umd.js",
+  "module": "esm5/ng-select.js",
+  "es2015": "esm2015/ng-select.js",
+  "typings": "ng-select.d.ts",
+  "metadata": "ng-select.metadata.json",
+  "dependencies": {
+    "tslib": "^1.7.1"
   }
 }

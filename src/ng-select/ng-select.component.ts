@@ -95,6 +95,7 @@ export class NgSelectComponent implements OnDestroy, OnChanges, AfterViewInit, C
     @Input() virtualScroll = false;
     @Input() selectableGroup = false;
     @Input() searchFn = null;
+    @Input() bindSelectedValues: Array<any>;
     @Input() @HostBinding('class.typeahead') typeahead: Subject<string>;
     @Input() @HostBinding('class.ng-multiple') multiple = false;
     @Input() @HostBinding('class.taggable') addTag: boolean | AddTagFn = false;
@@ -158,9 +159,49 @@ export class NgSelectComponent implements OnDestroy, OnChanges, AfterViewInit, C
     private _onTouched = () => { };
     
     clearItem = (item: any) => {
-        const option = this.selectedItems.find(x => x.value === item);
-        this.unselect(option);
+        const option = this.selectedItems.find(x => this.objectEquals(x.value,item));
+        if(option && option.selected)
+          this.unselect(option);
     };
+
+    objectEquals(v1, v2) {
+
+      if (typeof(v1) !== typeof(v2)) {
+          return false;
+      }
+  
+      if (typeof(v1) === "function") {
+          return v1.toString() === v2.toString();
+      }
+  
+      if (v1 instanceof Object && v2 instanceof Object) {
+          if (this.countProps(v1) !== this.countProps(v2)) {
+              return false;
+          }
+          var r = true;
+          var keys = Object.keys(v1)
+          keys.forEach(key => {
+            r = this.objectEquals(v1[key], v2[key]);
+              if (!r) {
+                  return false;
+              }
+          });
+          return r;
+      } else {
+          return v1 === v2;
+      }
+  };
+
+  countProps(obj) {
+    var count = 0;
+    var keys = Object.keys(obj)
+    keys.forEach(key => {
+      if (obj.hasOwnProperty(key)) {
+        count++;
+      }
+    });
+    return count;
+  };
 
     constructor(@Inject(NG_SELECT_DEFAULT_CONFIG) config: NgSelectConfig,
         private _cd: ChangeDetectorRef,
@@ -175,7 +216,10 @@ export class NgSelectComponent implements OnDestroy, OnChanges, AfterViewInit, C
     }
 
     get selectedValues() {
-        return this.selectedItems.map(x => x.value);
+        if(this.bindSelectedValues)
+          return this.bindSelectedValues
+        else
+          return this.selectedItems.map(x => x.value);
     }
 
     get isLoading() {
